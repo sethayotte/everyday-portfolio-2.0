@@ -1,5 +1,7 @@
 import React from "react";
-import { Form, Input, Button, Select, InputNumber } from "antd";
+import { Button, Select, InputNumber } from "antd";
+import { Breadcrumb, BreadcrumbItem,
+   Form, FormGroup, Label, Input, Col } from 'reactstrap';
 
 const toInputUppercase = (e) => {
   e.target.value = ("" + e.target.value).toUpperCase();
@@ -42,7 +44,7 @@ class AddNewForm extends React.Component {
       <React.Fragment>
         <Form onSubmit={this.handleSumbit}>
           <h5 htmlFor="posType">Position Type</h5>
-          <Select
+          <Input
           type="select"
           name="posType"
           value={this.state.posType}
@@ -52,11 +54,11 @@ class AddNewForm extends React.Component {
             size="large"
             bordered={false}
           >
-            <Select.Option>Stock</Select.Option>
-            <Select.Option>ETF</Select.Option>
-            <Select.Option>Mutual Fund</Select.Option>
-            <Select.Option>Other Asset</Select.Option>
-          </Select>
+            <option>Stock</option>
+            <option>ETF</option>
+            <option>Mutual Fund</option>
+            <option>Other Asset</option>
+          </Input>
 
           <h5 htmlFor="symbolInput">Ticker/Symbol</h5>
           <Input
@@ -74,7 +76,7 @@ class AddNewForm extends React.Component {
           />
 
           <h5 htmlFor="numShares">Number of Shares</h5>
-          <InputNumber
+          <Input
           type="text"
           id="numShares"
           name="numShares"
