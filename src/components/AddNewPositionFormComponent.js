@@ -82,11 +82,11 @@ class AddNewForm extends React.Component {
           name="numShares"
           value={this.state.numShares}
           onChange={this.handleInputChange}
-            size="large"
-            className="form-field"
-            placeholder="5"
-            min={1}
-            max={1000}
+          size="large"
+          className="form-field"
+          placeholder="5"
+          min={1}
+          max={1000}
           />
           <h3>Estimated Value</h3>
           <h2>$--.--</h2>
