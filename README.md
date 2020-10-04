@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Everyday-Portfolio  
 
-## Available Scripts
+| [View Project Proposal](https://github.com/sethayotte/Portfolio_V1/blob/master/assets/SethMitchell_EverydayPortfolioProposal.pdf) | [View Design Brief](https://github.com/sethayotte/Portfolio_V1/blob/master/assets/EverydayPortfolio_DesignBrief.pdf) |
+|------------|-------------|
 
-In the project directory, you can run:
 
-### `npm start`
+| Today View      | Splash Screen      |  Portfolio View  |
+|------------|-------------|-------------|
+| ![alt text](https://github.com/sethayotte/Portfolio_V1/blob/master/assets/Today-View-Full.png) | ![alt text](https://github.com/sethayotte/Portfolio_V1/blob/master/assets/Splash-Screen.png) | ![alt text](https://github.com/sethayotte/Portfolio_V1/blob/master/assets/Portfolio-View.png) |
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Introduction
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+*With a strong interest in personal investment and finance, I’m interested in developing tools that
+can help engage individuals and make their lives easier. Across bank accounts, investment
+platforms, budget tools - nothing seems to have a simple, easy-to-digest solution to watch your
+performance on a daily basis.*
 
-### `npm test`
+*While true gains are the culmination of years and decades of time spent in the market, I still like to
+see how things are moving day to day - as well as read daily news about earnings, announcements,
+etc. Especially in today’s COVID environment, things can swing significantly day to day.*
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*The goal of Everyday Portfolio is to give a snapshot of your day in a simple and clean application. I
+think this will be a good app to develop alongside the NuCamp curriculum since the ideal
+environment would be a native app. Ideally this would be a project that would continue on into the
+App Store to give access to everyone.*
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Feature Set
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. “Today View” Dashboard that includes:
+      - Total Day Gain/Loss
+      - Top 3 Performers (with live price & trend charts)
+      - Bottom 3 Performers (with live price & trend charts)
+      - Quick access to top news stories
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. "My Positions" view to quickly see all holdings
 
-### `npm run eject`
+3. Ability to add new positions after a purchase
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. "Profile" view to manage account
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Development Pipeline
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+Static Webpage  →  Initialize React  →  Migrate to Native Package
+```
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![alt text](https://github.com/sethayotte/Portfolio_V1/blob/master/assets/Web-Based-View.png)
