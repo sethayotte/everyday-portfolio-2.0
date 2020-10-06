@@ -67,7 +67,8 @@ async componentDidMount() {
               <Switch>
                 <Route path="/today" component={Today} />
                 <Route exact path="/portfolio" render={(props) => ( <Portfolio {...props} state={this.state} /> )} />
-                <Route exact path="/add-new" render={(props) => ( <AddNewForm {...props} state={this.state} /> )} />
+                <Route exact path="/add-new-form" render={(props) => ( <AddNewForm {...props} state={this.state} /> )} />
+                <Route exact path="/add-new" render={(props) => ( <AddNew {...props} state={this.state} /> )} />
                 <Route exact path="/profile" component={Profile} />
                 <Redirect to="/" />
               </Switch>

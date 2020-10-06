@@ -52,8 +52,6 @@ class AddNewForm extends React.Component {
           onChange={this.handleInputChange}
             defaultValue="Select One"
             className="form-field-dropdown"
-            size="large"
-            bordered={false}
           >
             <option>Stock</option>
             <option>ETF</option>
@@ -69,7 +67,6 @@ class AddNewForm extends React.Component {
             value={this.state.symbolInput}
             onChange={this.handleInputChange}
             onInput={toInputUppercase}
-            size="large"
             className="form-field"
             maxLength={5}
             spellCheck="false"
@@ -83,7 +80,6 @@ class AddNewForm extends React.Component {
           name="numShares"
           value={this.state.numShares}
           onChange={this.handleInputChange}
-          size="large"
           className="form-field"
           placeholder="5"
           min={1}
