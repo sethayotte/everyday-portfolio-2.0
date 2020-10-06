@@ -1,7 +1,7 @@
 import React from "react";
-import { Button, Select, InputNumber } from "antd";
+import { Select, InputNumber } from "antd";
 import { Breadcrumb, BreadcrumbItem,
-   Form, FormGroup, Label, Input, Col } from 'reactstrap';
+   Form, FormGroup, Button, Input, Col } from 'reactstrap';
 
 const toInputUppercase = (e) => {
   e.target.value = ("" + e.target.value).toUpperCase();
@@ -34,9 +34,10 @@ class AddNewForm extends React.Component {
   }
 
   handleSumbit(event) {
+    event.preventDefault();
     console.log(`Position Type: ${this.posType.value} Symbol: ${this.symbolInput.value} Number of Shares: ${this.numShares.value}`);
     alert(`Position Type: ${this.posType.value} Symbol: ${this.symbolInput.value} Number of Shares: ${this.numShares.value}`);
-    event.preventDefault();
+    
   }
 
   render() {
@@ -89,9 +90,9 @@ class AddNewForm extends React.Component {
           max={1000}
           />
           <h3>Estimated Value</h3>
-          <h2>$--.--</h2>
+          <h2>$0.00</h2>
 
-          <Button className="form-button" type="submit">
+          <Button className="form-button" type="submit" onSubmit={this.handleSumbit}>
             Add
           </Button>
         </Form>
