@@ -34,10 +34,8 @@ class AddNewForm extends React.Component {
   }
 
   handleSumbit(event) {
-    event.preventDefault();
     console.log(`Position Type: ${this.posType.value} Symbol: ${this.symbolInput.value} Number of Shares: ${this.numShares.value}`);
     alert(`Position Type: ${this.posType.value} Symbol: ${this.symbolInput.value} Number of Shares: ${this.numShares.value}`);
-    
   }
 
   render() {
